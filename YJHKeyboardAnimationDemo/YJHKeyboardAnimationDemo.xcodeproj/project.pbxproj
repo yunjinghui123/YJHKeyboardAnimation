@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CD72CC1233A16CA00C9416D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD72CC0233A16CA00C9416D /* AppDelegate.m */; };
+		1CD72CC4233A16CA00C9416D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD72CC3233A16CA00C9416D /* ViewController.m */; };
+		1CD72CC7233A16CA00C9416D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD72CC5233A16CA00C9416D /* Main.storyboard */; };
+		1CD72CC9233A16CF00C9416D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD72CC8233A16CF00C9416D /* Assets.xcassets */; };
+		1CD72CCC233A16CF00C9416D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD72CCA233A16CF00C9416D /* LaunchScreen.storyboard */; };
+		1CD72CCF233A16CF00C9416D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD72CCE233A16CF00C9416D /* main.m */; };
+		1CD72CD8233A1B4000C9416D /* YJHKeyboardAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD72CD7233A1B4000C9416D /* YJHKeyboardAnimation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C6745B3233E083800256C0F /* YJHKeyboardConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHKeyboardConst.h; sourceTree = "<group>"; };
+		1CD72CBC233A16CA00C9416D /* YJHKeyboardAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJHKeyboardAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD72CBF233A16CA00C9416D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1CD72CC0233A16CA00C9416D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1CD72CC2233A16CA00C9416D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1CD72CC3233A16CA00C9416D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1CD72CC6233A16CA00C9416D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CD72CC8233A16CF00C9416D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CD72CCB233A16CF00C9416D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CD72CCD233A16CF00C9416D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CD72CCE233A16CF00C9416D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CD72CD6233A1B4000C9416D /* YJHKeyboardAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHKeyboardAnimation.h; sourceTree = "<group>"; };
+		1CD72CD7233A1B4000C9416D /* YJHKeyboardAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJHKeyboardAnimation.m; sourceTree = "<group>"; };
+		1CD72CD9233A1DB200C9416D /* YJHKeyboardProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHKeyboardProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CD72CB9233A16CA00C9416D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CD72CB3233A16CA00C9416D = {
+			isa = PBXGroup;
+			children = (
+				1CD72CBE233A16CA00C9416D /* YJHKeyboardAnimationDemo */,
+				1CD72CBD233A16CA00C9416D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CD72CBD233A16CA00C9416D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CD72CBC233A16CA00C9416D /* YJHKeyboardAnimationDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CD72CBE233A16CA00C9416D /* YJHKeyboardAnimationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1CD72CD5233A176400C9416D /* YJHKeyboardAnimation */,
+				1CD72CBF233A16CA00C9416D /* AppDelegate.h */,
+				1CD72CC0233A16CA00C9416D /* AppDelegate.m */,
+				1CD72CC2233A16CA00C9416D /* ViewController.h */,
+				1CD72CC3233A16CA00C9416D /* ViewController.m */,
+				1CD72CC5233A16CA00C9416D /* Main.storyboard */,
+				1CD72CC8233A16CF00C9416D /* Assets.xcassets */,
+				1CD72CCA233A16CF00C9416D /* LaunchScreen.storyboard */,
+				1CD72CCD233A16CF00C9416D /* Info.plist */,
+				1CD72CCE233A16CF00C9416D /* main.m */,
+			);
+			path = YJHKeyboardAnimationDemo;
+			sourceTree = "<group>";
+		};
+		1CD72CD5233A176400C9416D /* YJHKeyboardAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1CD72CD9233A1DB200C9416D /* YJHKeyboardProtocol.h */,
+				1CD72CD6233A1B4000C9416D /* YJHKeyboardAnimation.h */,
+				1CD72CD7233A1B4000C9416D /* YJHKeyboardAnimation.m */,
+				1C6745B3233E083800256C0F /* YJHKeyboardConst.h */,
+			);
+			name = YJHKeyboardAnimation;
+			path = ../../YJHKeyboardAnimation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CD72CBB233A16CA00C9416D /* YJHKeyboardAnimationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CD72CD2233A16CF00C9416D /* Build configuration list for PBXNativeTarget "YJHKeyboardAnimationDemo" */;
+			buildPhases = (
+				1CD72CB8233A16CA00C9416D /* Sources */,
+				1CD72CB9233A16CA00C9416D /* Frameworks */,
+				1CD72CBA233A16CA00C9416D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YJHKeyboardAnimationDemo;
+			productName = YJHKeyboardAnimationDemo;
+			productReference = 1CD72CBC233A16CA00C9416D /* YJHKeyboardAnimationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CD72CB4233A16CA00C9416D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = yunjinghui;
+				TargetAttributes = {
+					1CD72CBB233A16CA00C9416D = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 1CD72CB7233A16CA00C9416D /* Build configuration list for PBXProject "YJHKeyboardAnimationDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CD72CB3233A16CA00C9416D;
+			productRefGroup = 1CD72CBD233A16CA00C9416D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CD72CBB233A16CA00C9416D /* YJHKeyboardAnimationDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CD72CBA233A16CA00C9416D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD72CCC233A16CF00C9416D /* LaunchScreen.storyboard in Resources */,
+				1CD72CC9233A16CF00C9416D /* Assets.xcassets in Resources */,
+				1CD72CC7233A16CA00C9416D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CD72CB8233A16CA00C9416D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD72CC4233A16CA00C9416D /* ViewController.m in Sources */,
+				1CD72CD8233A1B4000C9416D /* YJHKeyboardAnimation.m in Sources */,
+				1CD72CCF233A16CF00C9416D /* main.m in Sources */,
+				1CD72CC1233A16CA00C9416D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1CD72CC5233A16CA00C9416D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CD72CC6233A16CA00C9416D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CD72CCA233A16CF00C9416D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CD72CCB233A16CF00C9416D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CD72CD0233A16CF00C9416D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1CD72CD1233A16CF00C9416D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CD72CD3233A16CF00C9416D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = YJHKeyboardAnimationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-432680302-qq.com.YJHKeyboardAnimationDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CD72CD4233A16CF00C9416D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = YJHKeyboardAnimationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-432680302-qq.com.YJHKeyboardAnimationDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CD72CB7233A16CA00C9416D /* Build configuration list for PBXProject "YJHKeyboardAnimationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD72CD0233A16CF00C9416D /* Debug */,
+				1CD72CD1233A16CF00C9416D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CD72CD2233A16CF00C9416D /* Build configuration list for PBXNativeTarget "YJHKeyboardAnimationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD72CD3233A16CF00C9416D /* Debug */,
+				1CD72CD4233A16CF00C9416D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CD72CB4233A16CA00C9416D /* Project object */;
+}
