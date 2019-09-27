@@ -34,12 +34,12 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)unregisterAllNotificationsViewController:(UIViewController *)viewController;
 
 /**
- Unavailable. Please use sharedManager method
+ Unavailable. Please use '-initWithEditViewController:' method
  */
 -(nonnull instancetype)init NS_UNAVAILABLE;
 
 /**
- Unavailable. Please use sharedManager method
+ Unavailable. Please use '-initWithEditViewController:' method
  */
 + (nonnull instancetype)new NS_UNAVAILABLE;
 
