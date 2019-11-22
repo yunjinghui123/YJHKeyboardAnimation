@@ -6,17 +6,19 @@
 //  Copyright © 2019 yunjinghui. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "YJHKeyboardProtocol.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YJHKeyboardAnimation : NSObject <YJHKeyboardProtocol>
+typedef void(^YJHKeyboardDidFinishDisplay)(CGFloat keyboardHeight);
+typedef void(^YJHKeyboardHidden)(void);
 
-/**
- - create instances of this class
- */
-- (instancetype)initWithEditViewController:(UIViewController *)viewController;
+@interface YJHKeyboardAnimation : NSObject
+
+/// keyboard did show handler
+@property (nonatomic, copy) YJHKeyboardDidFinishDisplay keyboardDidFinishDisplay;
+/// keyboard hidden handler
+@property (nonatomic, copy) YJHKeyboardHidden           keyboardDidFinishHidden;
 
 /**
  keyboard will change frame func
@@ -27,26 +29,6 @@ NS_ASSUME_NONNULL_BEGIN
  *  keyboard hidden
  */
 - (void)keyboardWillHide;
-
-/**
- unregiseter all notification
- */
--(void)unregisterAllNotificationsViewController:(UIViewController *)viewController;
-
-/**
- Unavailable. Please use '-initWithEditViewController:' method
- */
--(nonnull instancetype)init NS_UNAVAILABLE;
-
-/**
- Unavailable. Please use '-initWithEditViewController:' method
- */
-+ (nonnull instancetype)new NS_UNAVAILABLE;
-
-/**
- keyboard delegate
- */
-@property (nonatomic, weak) id<YJHKeyboardProtocol> delegate;
 
 @end
 

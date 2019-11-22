@@ -30,7 +30,6 @@
 		1CD72CCE233A16CF00C9416D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1CD72CD6233A1B4000C9416D /* YJHKeyboardAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHKeyboardAnimation.h; sourceTree = "<group>"; };
 		1CD72CD7233A1B4000C9416D /* YJHKeyboardAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJHKeyboardAnimation.m; sourceTree = "<group>"; };
-		1CD72CD9233A1DB200C9416D /* YJHKeyboardProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHKeyboardProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +79,9 @@
 		1CD72CD5233A176400C9416D /* YJHKeyboardAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				1CD72CD9233A1DB200C9416D /* YJHKeyboardProtocol.h */,
+				1C6745B3233E083800256C0F /* YJHKeyboardConst.h */,
 				1CD72CD6233A1B4000C9416D /* YJHKeyboardAnimation.h */,
 				1CD72CD7233A1B4000C9416D /* YJHKeyboardAnimation.m */,
-				1C6745B3233E083800256C0F /* YJHKeyboardConst.h */,
 			);
 			name = YJHKeyboardAnimation;
 			path = ../../YJHKeyboardAnimation;
@@ -305,15 +303,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = TV2DAENY7E;
 				INFOPLIST_FILE = YJHKeyboardAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-432680302-qq.com.YJHKeyboardAnimationDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huimai365.shop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Huimai_Developer_Shop;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -323,15 +322,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = TV2DAENY7E;
 				INFOPLIST_FILE = YJHKeyboardAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-432680302-qq.com.YJHKeyboardAnimationDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huimai365.shop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Huimai_Developer_Shop;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

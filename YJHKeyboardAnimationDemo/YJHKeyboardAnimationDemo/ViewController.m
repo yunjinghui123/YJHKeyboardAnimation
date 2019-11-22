@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "YJHKeyboardConst.h"
 
-@interface ViewController () <YJHKeyboardProtocol>
+@interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *te;
 
 @end
@@ -21,10 +21,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _keyboard = [[YJHKeyboardAnimation alloc] initWithEditViewController:self];
-    _keyboard.delegate = self;
-}
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrameNoti:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillHide) name:UIKeyboardWillHideNotification object:nil];
 
+    _keyboard = [[YJHKeyboardAnimation alloc] init];
+    _keyboard.keyboardDidFinishDisplay = ^(CGFloat keyboardHeight) {
+        NSLog(@"%f", keyboardHeight);
+    };
+    _keyboard.keyboardDidFinishHidden = ^{
+        NSLog(@"隐藏");
+    };
+}
 
 - (void)keyboardWillChangeFrameNoti:(NSNotification *)notification {
     [_keyboard keyboardWillChangeFrameNoti:notification];
@@ -34,14 +41,6 @@
     [_keyboard keyboardWillHide];
 }
 
-- (void)keyboardDidFinishDisplay:(CGFloat)keyboardH {
-    NSLog(@"____________%f", keyboardH);
-}
-
-- (void)keyboardDidFinishHidden {
-    NSLog(@"____________keyboardDidFinishHidden");
-}
-
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
@@ -49,7 +48,6 @@
 
 
 - (void)dealloc {
-    [_keyboard unregisterAllNotificationsViewController:self];
 }
 
 

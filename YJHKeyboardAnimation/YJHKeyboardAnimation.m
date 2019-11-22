@@ -7,7 +7,6 @@
 //
 
 #import "YJHKeyboardAnimation.h"
-#import <UIKit/UIKit.h>
 
 @interface YJHKeyboardAnimation ()
 
@@ -16,14 +15,6 @@
 @end
 
 @implementation YJHKeyboardAnimation
-
-- (instancetype)initWithEditViewController:(UIViewController *)viewController {
-    if (self = [super init]) {
-        [[NSNotificationCenter defaultCenter] addObserver:viewController selector:@selector(keyboardWillChangeFrameNoti:) name:UIKeyboardWillShowNotification object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:viewController selector:@selector(keyboardWillHide) name:UIKeyboardWillHideNotification object:nil];
-    }
-    return self;
-}
 
 /**
  keyboard show notification
@@ -51,8 +42,8 @@
     // query animation
     [UIView animateWithDuration:_time animations:^{
         [UIView setAnimationCurve:self->_curve];
-        if ([self.delegate respondsToSelector:@selector(keyboardDidFinishDisplay:)]) {
-            [self.delegate keyboardDidFinishDisplay:keyboardH];
+        if (self.keyboardDidFinishDisplay) {
+            self.keyboardDidFinishDisplay(keyboardH);
         }
     }];
 }
@@ -65,18 +56,11 @@
     [UIView animateWithDuration:_time animations:^{
         // animation
         [UIView setAnimationCurve:self->_curve];
-        if ([self.delegate respondsToSelector:@selector(keyboardDidFinishHidden)]) {
-            [self.delegate keyboardDidFinishHidden];
+        if (self.keyboardDidFinishHidden) {
+            self.keyboardDidFinishHidden();
         }
     }];
 }
 
-/**
- unregister all notification
- */
-- (void)unregisterAllNotificationsViewController:(UIViewController *)viewController {
-    [[NSNotificationCenter defaultCenter] removeObserver:viewController name:UIKeyboardWillShowNotification object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:viewController name:UIKeyboardWillHideNotification object:nil];
-}
 
 @end

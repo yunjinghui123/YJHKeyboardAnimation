@@ -9,7 +9,6 @@
 #ifndef YJHKeyboardConst_h
 #define YJHKeyboardConst_h
 
-#import "YJHKeyboardProtocol.h"
 #import "YJHKeyboardAnimation.h"
 
 #endif /* YJHKeyboardConst_h */
