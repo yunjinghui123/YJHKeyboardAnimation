@@ -17,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C6745B3233E083800256C0F /* YJHKeyboardConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHKeyboardConst.h; sourceTree = "<group>"; };
 		1CD72CBC233A16CA00C9416D /* YJHKeyboardAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJHKeyboardAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD72CBF233A16CA00C9416D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CD72CC0233A16CA00C9416D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,7 +78,6 @@
 		1CD72CD5233A176400C9416D /* YJHKeyboardAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				1C6745B3233E083800256C0F /* YJHKeyboardConst.h */,
 				1CD72CD6233A1B4000C9416D /* YJHKeyboardAnimation.h */,
 				1CD72CD7233A1B4000C9416D /* YJHKeyboardAnimation.m */,
 			);
@@ -310,7 +308,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.huimai365.shop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1432680302qq.yunjinghui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Huimai_Developer_Shop;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,7 +327,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.huimai365.shop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.1432680302qq.yunjinghui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Huimai_Developer_Shop;
 				TARGETED_DEVICE_FAMILY = "1,2";

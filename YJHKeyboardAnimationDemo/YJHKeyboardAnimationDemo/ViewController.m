@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "YJHKeyboardConst.h"
+#import "YJHKeyboardAnimation.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *te;
