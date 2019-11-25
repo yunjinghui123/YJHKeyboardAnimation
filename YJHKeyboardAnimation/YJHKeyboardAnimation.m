@@ -51,11 +51,15 @@
 /*
  *  keyboard hidden
  */
-- (void)keyboardWillHide {
+- (void)keyboardWillHide:(UIView *)keyBoardView {
     // query animation
     [UIView animateWithDuration:_time animations:^{
         // animation
         [UIView setAnimationCurve:self->_curve];
+        if (keyBoardView != nil) {
+            [keyBoardView.inputView endEditing:YES];
+            [keyBoardView resignFirstResponder];
+        }
         if (self.keyboardDidFinishHidden) {
             self.keyboardDidFinishHidden();
         }

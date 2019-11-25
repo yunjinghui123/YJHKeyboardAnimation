@@ -28,7 +28,7 @@ typedef void(^YJHKeyboardHidden)(void);
 /*
  *  keyboard hidden
  */
-- (void)keyboardWillHide;
+- (void)keyboardWillHide:(UIView * _Nullable)keyBoardView;
 
 @end
 

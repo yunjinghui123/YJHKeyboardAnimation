@@ -38,7 +38,7 @@
 }
 
 - (void)keyboardWillHide {
-    [_keyboard keyboardWillHide];
+    [_keyboard keyboardWillHide:nil];
 }
 
 
