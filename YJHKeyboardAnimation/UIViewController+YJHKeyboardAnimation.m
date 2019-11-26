@@ -14,7 +14,6 @@ static void * const keyboardKey;
 static void * const keyboardViewKey;
 
 @implementation UIViewController (YJHKeyboardAnimation)
-@dynamic keyboardView;
 
 - (void)addKeyObserverWithKeyView:(UIView *)keyboardView keyboardShow:(keyboardShow)show keyboardHidden:(keyboardHidden)hidden {
     objc_setAssociatedObject(self, &keyboardViewKey, keyboardView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -47,6 +46,10 @@ static void * const keyboardViewKey;
 /// animation view
 - (void)setKeyboardView:(UIView *)keyboardView {
     objc_setAssociatedObject(self, &keyboardViewKey, keyboardView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (UIView *)keyboardView {
+    return objc_getAssociatedObject(self, &keyboardViewKey);
 }
 
 /// keyboard animation
