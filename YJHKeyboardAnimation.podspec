@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "YJHKeyboardAnimation"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "keyboard show or hidden animation"
   spec.homepage     = "https://github.com/yunjinghui123/YJHKeyboardAnimation"
   spec.license      = "MIT"

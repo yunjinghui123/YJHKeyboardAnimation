@@ -9,6 +9,14 @@
 /**
  A UIViewController category for observer keyboard, you can call it in your UIViewController.
  you will get the keyboard to show the hidden callbacks and thus do something.
+ 
+ Important:
+ if you add this category, you must to remove keyboard observer.
+ example:
+ [[NSNotificationCenter defaultCenter] removeObserver:self];
+ or
+ [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+ [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
 */
 
 #import <UIKit/UIKit.h>
