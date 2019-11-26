@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ A simple class, Provide show and hide animations for 'UIViewController+YJHKeyboardAnimation' to call.
+ Of course, you can call it separatelly in your class, but it's so troublesome.
+ So it is recommended to call 'UIViewController+YJHKeyboardAnimation'
+ */
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^YJHKeyboardDidFinishDisplay)(CGFloat keyboardHeight);

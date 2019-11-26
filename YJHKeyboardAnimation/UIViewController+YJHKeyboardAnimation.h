@@ -5,6 +5,12 @@
 //  Created by yunjinghui on 2019/11/26.
 //  Copyright © 2019 yunjinghui. All rights reserved.
 //
+
+/**
+ A UIViewController category for observer keyboard, you can call it in your UIViewController.
+ you will get the keyboard to show the hidden callbacks and thus do something.
+*/
+
 #import <UIKit/UIKit.h>
 @class YJHKeyboardAnimation;
 
@@ -19,7 +25,7 @@ typedef void(^keyboardHidden)(void);
 @property (nonatomic, strong) YJHKeyboardAnimation *keyboardAnimation;
 @property (nonatomic, strong, nullable) UIView *keyboardView;
 
-/// add observer
+/// add keyboard observer
 /// @param keyboardView inputview
 /// @param show keyboard show handler
 /// @param hidden keyboard hidden handler
