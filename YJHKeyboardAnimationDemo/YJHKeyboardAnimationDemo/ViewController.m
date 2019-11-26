@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "YJHKeyboardAnimation.h"
+#import "UIViewController+YJHKeyboardAnimation.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *te;
@@ -21,24 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrameNoti:) name:UIKeyboardWillShowNotification object:nil];
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillHide) name:UIKeyboardWillHideNotification object:nil];
-
-    _keyboard = [[YJHKeyboardAnimation alloc] init];
-    _keyboard.keyboardDidFinishDisplay = ^(CGFloat keyboardHeight) {
-        NSLog(@"%f", keyboardHeight);
-    };
-    _keyboard.keyboardDidFinishHidden = ^{
+    [self addKeyObserverWithKeyView:nil keyboardShow:^(CGFloat height) {
+        NSLog(@"%f", height);
+    } keyboardHidden:^{
         NSLog(@"隐藏");
-    };
-}
-
-- (void)keyboardWillChangeFrameNoti:(NSNotification *)notification {
-    [_keyboard keyboardWillChangeFrameNoti:notification];
-}
-
-- (void)keyboardWillHide {
-    [_keyboard keyboardWillHide:nil];
+    }];
 }
 
 

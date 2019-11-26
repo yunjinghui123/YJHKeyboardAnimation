@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C337660238D032100A80F37 /* UIViewController+YJHKeyboardAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C33765F238D032100A80F37 /* UIViewController+YJHKeyboardAnimation.m */; };
 		1CD72CC1233A16CA00C9416D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD72CC0233A16CA00C9416D /* AppDelegate.m */; };
 		1CD72CC4233A16CA00C9416D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD72CC3233A16CA00C9416D /* ViewController.m */; };
 		1CD72CC7233A16CA00C9416D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD72CC5233A16CA00C9416D /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C33765E238D032100A80F37 /* UIViewController+YJHKeyboardAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YJHKeyboardAnimation.h"; sourceTree = "<group>"; };
+		1C33765F238D032100A80F37 /* UIViewController+YJHKeyboardAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YJHKeyboardAnimation.m"; sourceTree = "<group>"; };
 		1CD72CBC233A16CA00C9416D /* YJHKeyboardAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJHKeyboardAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD72CBF233A16CA00C9416D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CD72CC0233A16CA00C9416D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,6 +83,8 @@
 			children = (
 				1CD72CD6233A1B4000C9416D /* YJHKeyboardAnimation.h */,
 				1CD72CD7233A1B4000C9416D /* YJHKeyboardAnimation.m */,
+				1C33765E238D032100A80F37 /* UIViewController+YJHKeyboardAnimation.h */,
+				1C33765F238D032100A80F37 /* UIViewController+YJHKeyboardAnimation.m */,
 			);
 			name = YJHKeyboardAnimation;
 			path = ../../YJHKeyboardAnimation;
@@ -157,6 +162,7 @@
 			files = (
 				1CD72CC4233A16CA00C9416D /* ViewController.m in Sources */,
 				1CD72CD8233A1B4000C9416D /* YJHKeyboardAnimation.m in Sources */,
+				1C337660238D032100A80F37 /* UIViewController+YJHKeyboardAnimation.m in Sources */,
 				1CD72CCF233A16CF00C9416D /* main.m in Sources */,
 				1CD72CC1233A16CA00C9416D /* AppDelegate.m in Sources */,
 			);
