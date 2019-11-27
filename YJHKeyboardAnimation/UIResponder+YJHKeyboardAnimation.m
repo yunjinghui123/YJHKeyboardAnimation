@@ -1,22 +1,21 @@
 //
-//  UIViewController+YJHKeyboardAnimation.m
+//  UIResponder+YJHKeyboardAnimation.m
 //  YJHKeyboardAnimationDemo
 //
-//  Created by yunjinghui on 2019/11/26.
+//  Created by yunjinghui on 2019/11/27.
 //  Copyright © 2019 yunjinghui. All rights reserved.
 //
 
-#import "UIViewController+YJHKeyboardAnimation.h"
+#import "UIResponder+YJHKeyboardAnimation.h"
 #import "YJHKeyboardAnimation.h"
 #import <objc/runtime.h>
 
 static void * const keyboardKey;
 static void * const keyboardViewKey;
 
-@implementation UIViewController (YJHKeyboardAnimation)
-
+@implementation UIResponder (YJHKeyboardAnimation)
 - (void)addKeyObserverWithKeyView:(UIView *)keyboardView keyboardShow:(keyboardShow)show keyboardHidden:(keyboardHidden)hidden {
-    objc_setAssociatedObject(self, &keyboardViewKey, keyboardView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    [self setKeyboardView:keyboardView];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrameNoti:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide) name:UIKeyboardWillHideNotification object:nil];
     self.keyboardAnimation.keyboardDidFinishDisplay = ^(CGFloat keyboardHeight) {
@@ -65,5 +64,4 @@ static void * const keyboardViewKey;
     [self setKeyboardAnimation:keyboard];
     return keyboard;
 }
-
 @end

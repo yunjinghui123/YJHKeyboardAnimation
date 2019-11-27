@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- A simple class, Provide show and hide animations for 'UIViewController+YJHKeyboardAnimation' to call.
+ A simple class, Provide show and hide animations for 'UIResponder+YJHKeyboardAnimation' to call.
  Of course, you can call it separatelly in your class, but it's so troublesome.
  So it is recommended to call 'UIViewController+YJHKeyboardAnimation'
  */
