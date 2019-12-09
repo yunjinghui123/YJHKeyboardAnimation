@@ -9,20 +9,20 @@
 #ifndef YJHKeyboardAnimationDelegate_h
 #define YJHKeyboardAnimationDelegate_h
 
-
-@protocol YJHKeyboardAnimationDelegate <NSObject>
-
+@protocol YJHKeyboardInfo <NSObject>
 @required
-/**
- keyboard will change frame func
- */
+@property (nonatomic, assign, readonly) NSUInteger     keyboardCurve;
+@property (nonatomic, assign, readonly) NSTimeInterval keyboardDuration;
+@property (nonatomic, assign, readonly) CGFloat        keyboardHeight;
+@end
+
+@protocol YJHKeyboardAnimationDelegate <YJHKeyboardInfo>
+@required
+/** keyboard will change frame func */
 - (void)keyboardWillChangeFrameNoti:(NSNotification * _Nullable)notification;
 
-/*
- *  keyboard hidden
- */
+/**  keyboard hidden */
 - (void)keyboardWillHide:(UIView * _Nullable)keyBoardView;
-
 @end
 
 
