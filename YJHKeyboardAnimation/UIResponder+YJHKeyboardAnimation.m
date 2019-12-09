@@ -14,6 +14,7 @@ static void * const keyboardKey;
 static void * const keyboardViewKey;
 
 @implementation UIResponder (YJHKeyboardAnimation)
+
 - (void)addKeyObserverWithKeyView:(UIView *)keyboardView keyboardShow:(keyboardShow)show keyboardHidden:(keyboardHidden)hidden {
     [self setKeyboardView:keyboardView];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrameNoti:) name:UIKeyboardWillShowNotification object:nil];

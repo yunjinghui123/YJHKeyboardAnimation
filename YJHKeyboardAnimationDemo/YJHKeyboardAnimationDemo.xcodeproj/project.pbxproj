@@ -20,6 +20,7 @@
 /* Begin PBXFileReference section */
 		1C337661238E29B300A80F37 /* UIResponder+YJHKeyboardAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+YJHKeyboardAnimation.h"; sourceTree = "<group>"; };
 		1C337662238E29B300A80F37 /* UIResponder+YJHKeyboardAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+YJHKeyboardAnimation.m"; sourceTree = "<group>"; };
+		1C5D60E8239DF1150015CD7A /* YJHKeyboardAnimationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHKeyboardAnimationDelegate.h; sourceTree = "<group>"; };
 		1CD72CBC233A16CA00C9416D /* YJHKeyboardAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJHKeyboardAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD72CBF233A16CA00C9416D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CD72CC0233A16CA00C9416D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		1CD72CD5233A176400C9416D /* YJHKeyboardAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				1C5D60E8239DF1150015CD7A /* YJHKeyboardAnimationDelegate.h */,
 				1CD72CD6233A1B4000C9416D /* YJHKeyboardAnimation.h */,
 				1CD72CD7233A1B4000C9416D /* YJHKeyboardAnimation.m */,
 				1C337661238E29B300A80F37 /* UIResponder+YJHKeyboardAnimation.h */,
